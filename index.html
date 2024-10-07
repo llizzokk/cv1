@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <style>
         body {
             background-color: #fff;
@@ -17,6 +17,10 @@
             font-family: "Open Sans", sans-serif;
             line-height: 1.2;
             color: black;
+            background-image: url(./green.JPG);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
         }
 
         /* reset */
@@ -61,6 +65,17 @@
             padding: 30px;
         }
 
+        .main-part::before {
+            position: absolute;
+            bottom: -0.5%;
+            left: -0.4%;
+            border: 1px solid #A8B56F;
+            background-color: #A8B56F;
+            border-radius: 100%;
+            width: 6px;
+            height: 6px;
+            content: '';
+        }
 
         .my-info {
             margin-bottom: 30px;
@@ -216,6 +231,18 @@
             border-right: 1px solid #A8B56F;
         }
 
+        .sidebar::after {
+            position: absolute;
+            top: -0.5%;
+            left: 98.7%;
+            border: 1px solid #A8B56F;
+            background-color: #A8B56F;
+            border-radius: 100%;
+            width: 6px;
+            height: 6px;
+            content: '';
+        }
+
         .my-photo {
             width: 150px;
             height: 150px;
@@ -293,6 +320,10 @@
                 max-width: 65%;
             }
 
+            .main-part::before {
+                left: -0.8%;
+            }
+
             .main-title {
                 font-weight: 500;
             }
@@ -303,6 +334,10 @@
                 width: 35%;
                 min-height: 94vh;
                 border-right: 1px solid #A8B56F;
+            }
+
+            .sidebar::after {
+                left: 98.35%;
             }
 
             .my-photo {
@@ -452,7 +487,7 @@
         </div>
         <!-- side bar -->
         <aside class="sidebar">
-            <img src="./photo.jpg" alt="My photo" class="my-photo">
+            <img src="./photo.jpg" alt="My photo" class="my-photo" />
             <!-- side bar content -->
             <div class="side-content">
                 <!-- skills -->
